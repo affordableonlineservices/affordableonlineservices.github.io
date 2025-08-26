@@ -6,5 +6,5 @@ fuction sendMail(){
     message : document.getElementById("message").value,
   }
 
-  emailjs.send("service_dnnwurd","template_fdiazno",parms).then(alert("Email Sent!!"))
+  emailjs.send("BI-QbmaWFu1RIaSA2","template_fdiazno",parms).then(alert("Email Sent!!"))
 }
