@@ -43,10 +43,18 @@
 			formats to work correctly.
 		-->
 			<section>	
-				<video width="720" height="480" controls>
-  <source src="https://affordableonlineservices.github.io/affordableonlineservices/images/Background.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+				<div class="video-background">
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="Background.mp4" type="video/mp4">
+    <source src="your-video-path.webm" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+</div>
+<div class="content">
+  <!-- Your main website content goes here -->
+  <h1>My Website with a Video Background</h1>
+  <p>This is some content that appears on top of the video.</p>
+</div>
 				<div class="inner">
 					<h1>Affordable Computer Services AZ</h1>
 					<p>“Arizona’s Trusted IT Consulting Partner – 15 Years of Expertise in Computer Repair, Networking, and Office Technology Solutions”<br />
@@ -222,6 +230,7 @@
 	</body>
 
 </html>
+
 
 
 
