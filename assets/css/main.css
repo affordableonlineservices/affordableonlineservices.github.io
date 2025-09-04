@@ -11,7 +11,7 @@
 /* Reset */
 /* Custom Logo Styling */
 #header .logo img {
-  height: 50px; /* Adjust this value to set the desired height */
+  height: 80px; /* Adjust this value to set the desired height */
   width: auto; /* This maintains the logo's original aspect ratio */
   vertical-align: middle; /* Helps align the logo nicely with any other header content */
 }
