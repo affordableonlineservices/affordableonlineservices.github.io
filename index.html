@@ -49,6 +49,54 @@
   z-index: 0;
 }
 		</style>
+		<style>
+/* --- Professional Text Styling for Banner --- */
+
+/* General container for the hero text */
+#banner .hero-text {
+    text-align: center;
+}
+
+/* Main Title Styling */
+#banner .hero-text h2 {
+    font-size: 2.5em; /* A bit larger for more impact */
+    font-weight: 700; /* Bold and clear */
+    color: #FFFFFF; /* Explicitly set to white */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* CRITICAL for visibility */
+    margin-bottom: 0.5em;
+}
+
+/* Tagline Styling */
+#banner .hero-text .tagline {
+    font-size: 1.2em;
+    font-weight: 400; /* Standard weight, easy to read */
+    color: #FFFFFF;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8); /* A slightly softer shadow */
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+}
+
+/* Call-to-Action Text Styling */
+#banner .hero-text .cta {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+}
+
+/* Style for links within the CTA */
+#banner .hero-text .cta a {
+    color: #FFFFFF;
+    border-bottom: 1px dotted #FFFFFF; /* Subtle underline to show it's a link */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+}
+
+#banner .hero-text .cta a:hover {
+    color: #d4d4d4; /* Slight fade on hover */
+    border-bottom-color: transparent;
+}
+</style>
 	</head>
 	<body>
 <script type="text/javascript"
@@ -96,20 +144,20 @@
   <p>This is some content that appears on top of the video.</p>-->
 </div>
 				<div class="inner">
-<h2><strong>Affordable Computer Services AZ</strong></h2>
-	<p>“Arizona’s Trusted IT Consulting Partner – </p>
-						<p>15 Years of Expertise in Computer Repair, </p>
-						<p>Networking, and Office Technology Solutions”<br /></p>
-					<p>free <a href="https://templated.co/">consultation</a> today <a href="https://templated.co/license">480-720-7665</a>.</p>
-					<a href="#one" class="button special scrolly">Get Started</a>
-				</header>
-					<!--<h2><strong>Affordable Computer Services AZ</strong></h2>
-					<p>“Arizona’s Trusted IT Consulting Partner – </p>
-						<p>15 Years of Expertise in Computer Repair, </p>
-						<p>Networking, and Office Technology Solutions”<br /></p>
-					<p>free <a href="https://templated.co/">consultation</a> today <a href="https://templated.co/license">480-720-7665</a>.</p>
-					<a href="#one" class="button special scrolly">Get Started</a>-->
-				</div>
+    <header>
+        <div class="hero-text">
+            <h2>Affordable Computer Services AZ</h2>
+            <p class="tagline">
+                “Arizona’s Trusted IT Consulting Partner – <br />
+                15 Years of Expertise in Computer Repair, Networking, and Office Technology Solutions”
+            </p>
+            <p class="cta">
+                Get a free <a href="#footer">consultation</a> today: <a href="tel:4807207665" class="phone-link">480-720-7665</a>
+            </p>
+        </div>
+    </header>
+    <a href="#one" class="button special scrolly">Get Started</a>
+</div>
 			</section>
 
 		<!-- One -->
@@ -281,6 +329,7 @@
 	</body>
 
 </html>
+
 
 
 
