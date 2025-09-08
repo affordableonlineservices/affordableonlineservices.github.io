@@ -17,14 +17,14 @@
   right: 0;
   bottom: 0;
   min-width: 10%; 
-  min-height: 100%;
+  min-height: 10%;
   z-index: -1; /* Pushes the video behind the main content */
 }
 
 /* Style for the video element to cover the entire container */
 #bg-video {
-  width: 100%;
-  height: 100%;
+  width: 10%;
+  height: 10%;
   object-fit: cover; /* Ensures the video covers the entire area without stretching */
 }
 
