@@ -12,12 +12,13 @@
 /* Custom Logo Styling */
 <style> 
 			/* Style for the video container */
-/* Style for the video container as a normal element */
 .video-background {
-  position: relative; /* No longer fixed to the background */
-  width: 80%;
-  max-width: 900px; /* Optional: set a max-width */
-  margin: 40px auto;  /* Adds space above/below and centers it */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1; /* Pushes the video behind the main content */
 }
 
 /* Style for the video element to cover the entire container */
