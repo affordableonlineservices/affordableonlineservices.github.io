@@ -14,11 +14,11 @@
 			/* Style for the video container */
 .video-background {
   position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-  z-index: -1; /* Pushes the video behind the main content */
+  top: 10%;    /* (100% - 80%) / 2 */
+  left: 10%;   /* (100% - 80%) / 2 */
+  width: 80%; 
+  height: 80%;
+  z-index: -1; 
 }
 
 /* Style for the video element to cover the entire container */
