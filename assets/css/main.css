@@ -40,7 +40,39 @@ body {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+#menu {
+    display: none;
+}
 
+#menu.active {
+    display: block;
+}
+
+/* Toggle menu visibility for mobile */
+.toggle {
+    display: block;
+    background-color: #333;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    #menu {
+        display: block;
+    }
+
+    .toggle {
+        display: none;
+    }
+}
+
+// Toggle menu visibility for mobile
+document.querySelector('.toggle').addEventListener('click', function() {
+    document.querySelector('#menu').classList.toggle('active');
+});
+
+	
 <style> 
 			/* Style for the video container */
 .video-background {
