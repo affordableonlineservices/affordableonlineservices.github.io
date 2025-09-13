@@ -10,6 +10,37 @@
 
 /* Reset */
 /* Custom Logo Styling */
+/* Mobile-first approach */
+body {
+    font-size: 16px;
+}
+
+/* Larger screens (tablet and above) */
+@media screen and (min-width: 768px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    #menu ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Adjust grid-style section */
+    .grid-style {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+/* Even larger screens (desktop and above) */
+@media screen and (min-width: 1024px) {
+    .grid-style {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 <style> 
 			/* Style for the video container */
 .video-background {
