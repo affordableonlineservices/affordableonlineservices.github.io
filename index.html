@@ -13,6 +13,117 @@
 	
 	<body>
 
+		<!-- Add this code to the top of your <body> tag in index.html -->
+ 
+<style>
+  /* Affordable Logo Header Styling */
+  .logo-header {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #eee;
+  }
+ 
+  .logo-container {
+    flex-shrink: 0;
+  }
+ 
+  .logo {
+    height: 50px;
+    width: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+  }
+ 
+  .logo:hover {
+    opacity: 0.8;
+  }
+ 
+  /* Navigation Menu */
+  .nav-menu {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+  }
+ 
+  .nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+ 
+  .nav-menu a:hover {
+    color: #6dd5ed;
+  }
+ 
+  .nav-menu a.active {
+    color: #0099cc;
+    border-bottom: 2px solid #0099cc;
+    padding-bottom: 5px;
+  }
+ 
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .logo-header {
+      flex-direction: column;
+      gap: 15px;
+    }
+ 
+    .nav-menu {
+      flex-direction: column;
+      margin-left: 0;
+      gap: 10px;
+      width: 100%;
+      padding-top: 10px;
+      border-top: 1px solid #eee;
+    }
+ 
+    .logo {
+      height: 40px;
+    }
+ 
+    .nav-menu a {
+      padding: 8px 0;
+    }
+  }
+</style>
+ 
+<header class="logo-header">
+  <div class="logo-container">
+    <a href="/" style="text-decoration: none;">
+      <img src="images/Affordable-Logo.jpg" alt="Affordable Digital Services Logo" class="logo">
+    </a>
+  </div>
+  <nav class="nav-menu">
+    <a href="#home" class="active">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+ 
+<!-- 
+  IMPLEMENTATION STEPS:
+  
+  1. Create an 'images' folder in your repository (if it doesn't exist)
+  2. Upload Affordable-Logo.jpg to the 'images' folder
+  3. Copy this entire code block to the top of your <body> tag in index.html
+  4. Make sure the image path "images/Affordable-Logo.jpg" matches your folder structure
+  5. Customize the navigation links (Home, Services, About, Contact) as needed
+  
+  CUSTOMIZATION:
+  - Change logo height: Modify the "height: 50px" in the CSS (currently 50px, mobile is 40px)
+  - Change nav items: Edit the <a> tags in the navigation menu
+  - Change colors: Modify #0099cc (blue), #6dd5ed (cyan), #333 (dark gray)
+  - Remove nav menu: Delete the entire <nav class="nav-menu"> section if you only want the logo
+-->
 		<script type="text/javascript"
 			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 		</script>
