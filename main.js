@@ -131,20 +131,31 @@ function initFormHandler() {
   });
 }
 
-// ========== Mobile Menu Toggle ==========
-function initMenuToggle() {
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const href = this.getAttribute('href');
-      if (href === '#') return;
+// ========== Video Error Handling ==========
+function initVideoHandler() {
+  const video = document.getElementById('heroVideo');
+  if (!video) return;
 
-      const target = document.querySelector(href);
-      if (!target) return;
-
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
+  // Log when video starts playing
+  video.addEventListener('play', () => {
+    console.log('✓ Video is playing');
   });
+
+  // Handle video loading errors
+  video.addEventListener('error', (e) => {
+    console.error('✗ Video failed to load:', e);
+    console.error('Video source attempted:', video.src);
+    // Add visual feedback
+    video.style.display = 'none';
+    console.warn('Video hidden - using fallback gradient background');
+  });
+
+  // Check if video file exists by testing the source
+  const source = video.querySelector('source');
+  if (source) {
+    console.log('Video source path:', source.src);
+    console.log('Full URL would be:', new URL(source.src, window.location.href).href);
+  }
 }
 
 // ========== Analytics (Optional) ==========
@@ -175,6 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFormHandler();
   initSmoothScroll();
   initAnalytics();
+  initVideoHandler();
   
   console.log('✓ Affordable Computer Services initialized');
 });
